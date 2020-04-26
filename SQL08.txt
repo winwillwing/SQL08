@@ -1,0 +1,72 @@
+﻿信息系统与数据库技术练习8答题卡
+
+班级：信管一班    
+姓名：冯颖豪     
+学号：20190307141   
+
+注：请将答案放置在序号下方。*/
+
+（一）
+1.
+USE EDUC
+
+
+2.
+UPDATE Books
+SET Price='35.6',
+WHERE Ename='张建'
+
+
+3.
+UPDATE Books
+SET Discount=-0.05
+
+
+
+4.
+SELECT *
+FROM Books
+
+
+5.
+SELECT TOP 10 *
+FROM Student
+
+
+6.
+SELECT TOP 20 PERCENT *
+FROM SC
+
+7.
+SELECT *
+FROM Student
+WHERE Esex=Sxe
+
+8.
+SELECT *
+FROM SC
+WHERE SCscore>=60
+
+9.
+SELECT Author,Publisher,ISBN
+FROM Books
+
+10.
+SELECT DISTINCT Cid(8),
+FROM SC
+
+11.
+SELECT Bname,PublisherDate,Publisher,PublisherDate
+FROM Books
+
+12.
+SELECT Sid AS 学号,Cid AS 课程号,Cid AS 成绩
+FROM SC
+
+13.
+SELECT Sname,Sid,Sex(AA,Birth,GETDATE()) AS Age
+FROM Student
+
+14.
+SELECT *,Price+Discount AS DiscountPrice,Price-Price+Discount AS Economize
+FROM Books
